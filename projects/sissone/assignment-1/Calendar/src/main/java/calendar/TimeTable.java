@@ -42,7 +42,7 @@ public class TimeTable {
 	        
 	        
 	        //Create the first CalDay object with the starting date and add to list
-	        GregorianCalendar nextDay = (GregorianCalendar) firstDay.clone();
+	        GregorianCalendar firstDay = (GregorianCalendar) firstDay.clone();
 	        while (nextDay.before(lastDay)) {
 
 	            calDays.add(new CalDay(nextDay));
@@ -96,7 +96,7 @@ public class TimeTable {
 	        }
 	        
 	        //Get the first recurrence taken care of
-	        GregorianCalendar occurrenceDay = 
+	        GregorianCalendar occurrenceDay == 
 	                new GregorianCalendar(appt.getStartYear(), appt.getStartMonth(), 
 	                    appt.getStartDay());
 	        
