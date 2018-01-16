@@ -101,7 +101,7 @@ public class Appt implements  Comparable<Appt>{
         setRecurrence(recurringDays, RECUR_BY_MONTHLY, 0, RECUR_NUMBER_NEVER);
 
         
-        isValid();
+        //isValid();
     }
 
 
@@ -121,7 +121,7 @@ public class Appt implements  Comparable<Appt>{
             	if(startDay<1 || startDay>NumDaysInMonth)
             		this.valid=false;
             	else
-                	if(startMonth<1 || startMonth>12)
+                	if(startMonth<=1 || startMonth>12)
                 		this.valid=false;
                 	else
                 		this.valid=true;
