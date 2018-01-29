@@ -40,7 +40,7 @@ public class TimeTable {
 	        	throw new DateOutOfRangeException ("Second date specified is not  before the first date specified.");
 	        }
 	        
-	        
+	        //Error1: Switched nextDay and firstDay on line 45
 	        //Create the first CalDay object with the starting date and add to list
 	        GregorianCalendar nextDay = (GregorianCalendar) firstDay.clone();
 	        while (nextDay.before(lastDay)) {

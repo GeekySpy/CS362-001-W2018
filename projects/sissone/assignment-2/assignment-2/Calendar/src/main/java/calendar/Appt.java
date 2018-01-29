@@ -3,8 +3,8 @@
  */
 
 package calendar;
-
 import java.util.Comparator;
+
 
 
 /**
@@ -100,8 +100,8 @@ public class Appt implements  Comparable<Appt>{
         int[] recurringDays = new int[0];
         setRecurrence(recurringDays, RECUR_BY_MONTHLY, 0, RECUR_NUMBER_NEVER);
 
-        
-        isValid();
+        //Error 1: Took out the is Valid ();
+        //isValid();
     }
 
 
@@ -121,7 +121,8 @@ public class Appt implements  Comparable<Appt>{
             	if(startDay<1 || startDay>NumDaysInMonth)
             		this.valid=false;
             	else
-                	if(startMonth<1 || startMonth>12)
+                        //Error 2: Changed startMonth<1 ro startMonth<=1
+                	if(startMonth<=1 || startMonth>12)
                 		this.valid=false;
                 	else
                 		this.valid=true;
