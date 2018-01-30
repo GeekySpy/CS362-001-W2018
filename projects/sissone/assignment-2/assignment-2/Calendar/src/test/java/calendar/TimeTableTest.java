@@ -15,13 +15,13 @@ import static org.junit.Assert.*;
 
 public class TimeTableTest {
 
-	 @Test
+         @Test
 	  public void test01()  throws Throwable  {
-		 
+             
 	 }
 	 @Test
 	  public void test02()  throws Throwable  {
 		 
 	 }
-//add more unit tests as you needed
 }
+//add more unit tests as you needed}
